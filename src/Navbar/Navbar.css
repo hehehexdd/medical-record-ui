@@ -1,0 +1,34 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f2f2f2;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 1rem;
+  }
+  
+  a, Link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  a:hover, Link:hover {
+    background-color: #f2f2f2;
+  }
+  
