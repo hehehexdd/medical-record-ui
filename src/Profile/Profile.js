@@ -8,7 +8,6 @@ import {
   Form,
   InputGroup,
 } from "react-bootstrap";
-// import "./Profile.css";
 
 function ProfilePage() {
   const [name, setName] = useState("");
@@ -65,7 +64,6 @@ function ProfilePage() {
         .then((res) => {
           const moreSpecialities = res?.data;
           setMoreSpecialities(moreSpecialities);
-          //setSelectedItems(localStorage.getItem("specialities").split(","));
         })
         .catch((err) => {
           if (err?.response) {
@@ -118,7 +116,6 @@ function ProfilePage() {
     axios
       .get(
         `http://localhost:8080/doctor/${userId}`,
-        //`${process.env.AUTH_URL}/auth/token`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -14,7 +14,6 @@ const LoginPage = () => {
     try {
       const response = await axios.post(
         "http://localhost:8080/auth/token",
-        //`${process.env.AUTH_URL}/auth/token`,
         JSON.stringify({
           username,
           password,

@@ -10,7 +10,6 @@ const NewVisit = () => {
   const [gpLabel, setGpLabel] = useState("");
   const [doctor, setDoctor] = useState("");
   const [date, setDate] = useState(null);
-  //   const [endDate, setEndDate] = useState("");
   const history = useNavigate();
 
   useEffect(() => {
@@ -30,23 +29,6 @@ const NewVisit = () => {
       .catch((e) => {
         console.log(e);
       });
-
-    // axios
-    //   .get("http://localhost:8080/doctor/specialities", {
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   })
-    //   .then((res) => {
-    //     const specialties = [];
-    //     res.data.forEach((specialty) => {
-    //       specialties.push(specialty);
-    //     });
-    //     setSpecialities(specialties);
-    //   })
-    //   .catch((e) => {
-    //     console.log(e);
-    //   });
   }, []);
 
   const handleGp = (value) => {

@@ -1,3 +1,4 @@
+//Syncfusion table
 // import {
 //   GridComponent,
 //   ColumnsDirective,

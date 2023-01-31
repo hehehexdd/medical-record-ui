@@ -31,30 +31,8 @@ const Visits = () => {
     }
   };
 
-  //     axios
-  //       .get("http://localhost:8080/doctor", {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       })
-  //       .then((res) => {
-  //         const doctors = [];
-  //         res.data.forEach((doctor) => {
-  //           const d = {
-  //             name: doctor.name,
-  //             id: doctor.id,
-  //           };
-  //           doctors.push(d);
-  //         });
-  //         setAvailableDoctors(doctors);
-  //       })
-  //       .catch((e) => {
-  //         console.log(e);
-  //       });
-  //   };
   useEffect(() => {
     fetchVisits();
-    // data = JSON.parse(localStorage.getItem("data"));
   }, []);
 
   function EditModal({ item }) {

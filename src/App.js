@@ -29,20 +29,6 @@ function App() {
     </Routes>
   </Router>
   );
-  // return (
-  //   <>
-  //     <Router>
-  //       {/* <Navbar/> */}
-  //       <Navbar/>
-  //       <Routes>
-  //         <Route path="/login" element={<LoginPage/>} />
-  //         <Route path="/register" element={<RegisterPage/>} />
-  //         <Route path="/" element={<HomePage/>} />
-  //         <Route path="/profile" element={<ProfilePage/>}/>
-  //       </Routes>
-  //     </Router>
-  //   </>
-  // );
 }
 
 export default App;

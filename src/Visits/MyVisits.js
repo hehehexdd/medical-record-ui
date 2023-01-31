@@ -23,7 +23,6 @@ const MyVisits = () => {
         })
         .then((res) => {
           setData(res.data);
-          //   localStorage.setItem("data", JSON.stringify(res.data));
           return res.data;
         });
     } catch (err) {
@@ -56,7 +55,6 @@ const MyVisits = () => {
   useEffect(() => {
     fetchVisits();
     fetchDoctors();
-    // data = JSON.parse(localStorage.getItem("data"));
   }, []);
 
   const taxes =
@@ -89,43 +87,6 @@ const MyVisits = () => {
       </div>
     );
   }
-
-  //   useEffect(() => {
-  //     axios
-  //       .get("http://localhost:8080/doctor", {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       })
-  //       .then((res) => {
-  //         const doctors = [];
-  //         res.data.forEach((doctor) => {
-  //           doctors.push(doctor.id + ":" + doctor.name + ":" + doctor.npi);
-  //         });
-  //         setAvailableDoctors(doctors);
-  //       })
-  //       .catch((e) => {
-  //         console.log(e);
-  //       });
-
-  //     // axios
-  //     //   .get("http://localhost:8080/doctor/specialities", {
-  //     //     headers: {
-  //     //       "Content-Type": "application/json",
-  //     //     },
-  //     //   })
-  //     //   .then((res) => {
-  //     //     const specialties = [];
-  //     //     res.data.forEach((specialty) => {
-  //     //       specialties.push(specialty);
-  //     //     });
-  //     //     setSpecialities(specialties);
-  //     //   })
-  //     //   .catch((e) => {
-  //     //     console.log(e);
-  //     //   });
-  //   }, []);
-
   const handleNew = () => {
     history("/newVisit");
   };
@@ -133,36 +94,7 @@ const MyVisits = () => {
   const handleClose = () => {
     setShowModal(false);
   };
-
-
- 
-
-  //   return (
-  //     <Table striped bordered hover>
-  //       <thead>
-  //         <tr>
-  //           <th>Doctor</th>
-  //           <th>Disease</th>
-  //           <th>Medicament</th>
-  //           <th>Sick Leave</th>
-  //           <th>Actions</th>
-  //         </tr>
-  //       </thead>
-  //       <tbody>
-  //         {data.map((item) => (
-  //           <tr key={item.id}>
-  //             <td>{item.doctor}</td>
-  //             <td>{item.disease}</td>
-  //             <td>{item.medicament}</td>
-  //             <td>{item.sickLeave}</td>
-  //             <td>
-  //               <Button variant="primary">Edit</Button>
-  //             </td>
-  //           </tr>
-  //         ))}
-  //       </tbody>
-  //     </Table>
-  //   );
+  
   return (
     <>
       <Button onClick={handleNew}>New Visit</Button>
