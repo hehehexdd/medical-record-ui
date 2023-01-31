@@ -27,8 +27,23 @@ nav {
     background-color: #fff;
     cursor: pointer;
   }
+
+  button {
+    text-decoration: none;
+    color: rgb(163, 30, 37);
+    font-size: 1.6rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+  }
   
   a:hover, Link:hover {
-    background-color: #f2f2f2;
+    background-color: #6fa2dd;
+  }
+
+  button:hover{
+    background-color: #517762;
   }
   
